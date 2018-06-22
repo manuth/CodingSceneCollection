@@ -1,0 +1,26 @@
+{
+  "name": "codingscenecollection",
+  "version": "1.0.0",
+  "description": "A stream-collection for my OBS-Stream",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuth/CodingSceneCollection.git"
+  },
+  "author": {
+    "name": "Manuel Thalmann",
+    "email": "m@nuth.ch"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/manuth/CodingSceneCollection/issues"
+  },
+  "homepage": "https://github.com/manuth/CodingSceneCollection#readme",
+  "scripts": {
+    "watch": "tsc -watch -p ./",
+    "compile": "tsc -p ./"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.3.4",
+    "jquery": "^3.3.1"
+  }
+}
