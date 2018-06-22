@@ -1,0 +1,56 @@
+#trackInfo
+{
+    margin: 10px;
+}
+
+#albumArt
+{
+    margin: 0;
+    padding: 0;
+}
+
+.controls
+{
+    margin-top: 5px;
+}
+
+.musicTag
+{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.musicTag .marquee
+{
+    display:inline-block;
+    animation: marquee linear 15s infinite;
+}
+
+@keyframes marquee
+{
+    33% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    86% {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+    87% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    88% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
