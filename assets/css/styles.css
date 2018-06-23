@@ -1,6 +1,11 @@
-#trackInfo
+#main
 {
     margin: 10px;
+}
+
+.trackInfoBox
+{
+    margin-bottom: 0;
 }
 
 #albumArt
@@ -12,6 +17,7 @@
 .controls
 {
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .musicTag

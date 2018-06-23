@@ -1,6 +1,10 @@
 import * as Dedent from "dedent";
 import Message from "./Message";
 import Track from "./Track";
+import nouislider = require("nouislider");
+import TimeInfo from "./TimeInfo";
+
+declare var noUiSlider: typeof nouislider;
 
 $(document).ready(() => {
     let ws = new WebSocket("ws://localhost:5672/");
@@ -39,12 +43,40 @@ $(document).ready(() => {
                     $("#albumArt").attr("src", track.albumArt);
                 }
                 break;
+            
+            case "time":
+                if (data.payload)
+                {
+                    let timeInfo = data.payload as TimeInfo;
+                    (slider as any).noUiSlider.updateOptions({
+                        start: timeInfo.current,
+                        range: {
+                            min: 0,
+                            max: timeInfo.total
+                        }
+                    });
+                }
+                break;
         }
     }
 
     $(".musicTag").each(
         function () {
             observer.observe($(this).get(0), { childList: true });
+        });
+    
+    let slider = document.getElementById("timeSlider");
+    noUiSlider.create(
+        slider, {
+            start: 0,
+            connect: [true, false],
+            step: 1,
+            orientation: 'horizontal',
+            range: {
+                min: 0,
+                max: 100
+            },
+            tooltips: false
         });
 });
 

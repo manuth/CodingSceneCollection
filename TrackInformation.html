@@ -2,11 +2,12 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/nouisliders.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body class="grey darken-3 grey-text text-lighten-2">
-        <div id="trackInfo" class="">
-            <div class="row">
+        <div id="main">
+            <div class="row trackInfoBox">
                 <img id="albumArt" class="col s3" />
                 <div class="col s9">
                     <div class="information">
@@ -20,10 +21,11 @@
                     </div>
                 </div>
             </div>
+            <div id="timeSlider"></div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.js"></script>
+        <script src="./assets/js/nouisliders.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.js" integrity="sha256-uvn41VNPQ8aVNA6aS1Zjc2FUPkKq7ZgA6SzFiHkVgxs=" crossorigin="anonymous"></script>
         <script src="./lib/TrackInformation.js"></script>
     </body>
