@@ -1,7 +1,7 @@
 /**
  * Represents a track.
  */
-export default class Track
+export class Track
 {
     /**
      * The title of the track.
