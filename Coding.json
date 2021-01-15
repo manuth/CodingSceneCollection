@@ -187,6 +187,31 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "wasapi_input_capture",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Microphone",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
             "hotkeys": {},
             "id": "browser_source",
             "mixers": 0,
@@ -199,8 +224,13 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "css": ":root\n{\n    overflow: hidden;\n}",
+                "fps": 30,
+                "height": 228,
                 "is_local_file": true,
-                "local_file": "D:/Users/Manuel/AppData/Roaming/obs-studio/basic/scenes/GPMDP.html"
+                "local_file": "D:/Users/Manuel/AppData/Roaming/obs-studio/basic/scenes/Coding/TrackInformation.html",
+                "restart_when_active": true,
+                "width": 800
             },
             "sync": 0,
             "volume": 1.0
@@ -228,7 +258,7 @@
             "push-to-talk-delay": 0,
             "settings": {},
             "sync": 0,
-            "volume": 0.31443202495574951
+            "volume": 0.22698099911212921
         },
         {
             "deinterlace_field_order": 0,
@@ -259,9 +289,11 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Current Track (Google Play Music Desktop Player)": [],
                 "libobs.hide_scene_item.Default Audio": [],
+                "libobs.hide_scene_item.Microphone": [],
                 "libobs.hide_scene_item.Primary Screen": [],
                 "libobs.show_scene_item.Current Track (Google Play Music Desktop Player)": [],
                 "libobs.show_scene_item.Default Audio": [],
+                "libobs.show_scene_item.Microphone": [],
                 "libobs.show_scene_item.Primary Screen": []
             },
             "id": "scene",
@@ -275,7 +307,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 3,
+                "id_counter": 4,
                 "items": [
                     {
                         "align": 5,
@@ -301,6 +333,34 @@
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Current Track (Google Play Music Desktop Player)",
+                        "pos": {
+                            "x": 1239.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.85124999284744263,
+                            "y": 0.85166668891906738
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -345,18 +405,18 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "id": 3,
+                        "id": 4,
                         "locked": false,
-                        "name": "Current Track (Google Play Music Desktop Player)",
+                        "name": "Microphone",
                         "pos": {
-                            "x": 1414.0,
+                            "x": 0.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.63249999284744263,
-                            "y": 0.63333332538604736
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
