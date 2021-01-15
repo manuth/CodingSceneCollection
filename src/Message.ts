@@ -1,7 +1,7 @@
 /**
  * Represents a message sent by `Google Play Music Desktop Player`.
  */
-export default class Message
+export class Message
 {
     /**
      * The subject of the message.

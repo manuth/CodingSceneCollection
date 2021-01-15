@@ -1,7 +1,7 @@
 /**
  * Represents information about the time of a track.
  */
-export default class TimeInfo
+export class TimeInfo
 {
     /**
      * The total time in miliseconds.
